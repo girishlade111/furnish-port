@@ -1,0 +1,340 @@
+/* ============================================
+   Furnish — Custom Styles
+   Design tokens from DESIGN.md
+   ============================================ */
+
+/* --- Font --- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* --- Design Tokens --- */
+:root {
+  --font-primary: "Poppins", sans-serif;
+
+  --color-text-primary: #211f1c;
+  --color-text-secondary: #837a6d;
+  --color-text-inverse: #ffffff;
+  --color-brand-primary: #000000;
+  --color-brand-secondary: #d47f31;
+  --color-surface-base: #ffffff;
+  --color-surface-dark: #211f1c;
+  --color-border-light: #ecebe9;
+  --color-border-default: #dad7d2;
+
+  --color-gray-100: #ecebe9;
+  --color-gray-200: #dad7d2;
+  --color-gray-300: #c5c0b9;
+  --color-gray-400: #b3aca3;
+  --color-gray-500: #a0988d;
+  --color-gray-600: #837a6d;
+  --color-gray-700: #615b51;
+  --color-gray-800: #433e38;
+  --color-gray-900: #211f1c;
+
+  --color-link-default: #211f1c;
+  --color-link-hover: #000000;
+  --color-link-footer: #837a6d;
+  --color-link-footer-hover: #ffffff;
+
+  --space-1: 4px;
+  --space-2: 5px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 13.6px;
+  --space-6: 16px;
+  --space-7: 24px;
+  --space-8: 32px;
+
+  --radius-xs: 50px;
+  --radius-none: 0;
+  --shadow-1: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+  --shadow-2: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+
+  --swiper-theme-color: var(--color-brand-primary);
+  --swiper-pagination-bullet-inactive-color: var(--color-brand-primary);
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+}
+
+/* --- Base --- */
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-base);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  color: var(--color-link-default);
+  transition: color 150ms ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.form-control:focus-visible {
+  outline: 2px solid var(--color-brand-primary) !important;
+  outline-offset: 2px !important;
+  box-shadow: none !important;
+}
+
+/* --- Navbar --- */
+.navbar-custom {
+  background-color: var(--color-surface-base);
+}
+
+.navbar-custom .navbar-nav {
+  line-height: 1;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  color: var(--color-gray-700);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link:hover {
+  color: var(--color-gray-900);
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link.active {
+  color: var(--color-brand-primary);
+}
+
+/* Brand two-line */
+.navbar-brand .brand-line1 {
+  font-size: 0.75rem;
+  letter-spacing: 0.12rem;
+}
+
+.navbar-brand .brand-line2 {
+  font-size: 0.875rem;
+}
+
+/* --- Hero Slider --- */
+.hero-slider .swiper-slide {
+  position: relative;
+  text-align: center;
+}
+
+.hero-slider .hero-badge {
+  font-size: var(--bs-body-font-size);
+  font-style: italic;
+  color: var(--color-brand-secondary);
+}
+
+.hero-slider .hero-title {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: var(--bs-heading-font-weight);
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  .hero-slider .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+.hero-slider .hero-price {
+  font-weight: 600;
+  margin-bottom: var(--space-7);
+}
+
+/* Swiper pagination */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 0.3;
+  border: 2px solid var(--color-brand-primary);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--color-brand-primary);
+  border-color: var(--color-brand-primary);
+}
+
+.swiper-pagination-light .swiper-pagination-bullet {
+  border-color: #fff;
+  width: 10px;
+  height: 10px;
+}
+
+/* Swiper navigation */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-brand-primary);
+}
+
+[data-navigation="false"] .swiper-navigation {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* --- Product Card --- */
+.product-card .product-name {
+  margin-top: var(--space-6);
+}
+
+.product-card .product-name a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.product-card .product-name a:hover {
+  color: var(--color-brand-primary);
+}
+
+.product-card .product-price-original {
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+.product-card .product-price-sale {
+  font-weight: 600;
+}
+
+/* --- Buttons --- */
+.btn-icon {
+  height: 3rem;
+  width: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* --- Testimonial --- */
+.testimonial-card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: var(--shadow-2);
+}
+
+.testimonial-text {
+  font-style: italic;
+}
+
+/* --- Newsletter --- */
+.newsletter-form .form-control {
+  max-width: 50%;
+}
+
+@media (max-width: 575.98px) {
+  .newsletter-form .form-control {
+    max-width: 100%;
+  }
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: var(--color-surface-dark);
+  color: var(--color-link-footer);
+}
+
+.footer .ft-links {
+  color: var(--color-link-footer);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.footer .ft-links:hover {
+  color: var(--color-link-footer-hover);
+}
+
+.footer .ft-links:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.footer hr {
+  background-color: var(--color-gray-600);
+  opacity: 0.3;
+}
+
+/* --- Offcanvas --- */
+.offcanvas .offcanvas-body .navbar-nav .nav-link {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  color: var(--color-gray-700);
+  font-weight: 500;
+}
+
+.offcanvas .offcanvas-body .navbar-nav .nav-link:hover {
+  color: var(--color-gray-900);
+}
+
+.offcanvas .offcanvas-body .navbar-nav .nav-link.active {
+  color: var(--color-brand-primary);
+}
+
+/* --- Floating Download Button --- */
+.floating-download {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: 1030;
+}
+
+/* --- Section Spacing --- */
+.section-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .section-padding {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* --- Collection slider dark pagination override --- */
+.collection-slider .swiper-pagination-bullet {
+  border-color: var(--color-brand-primary);
+}
+
+.collection-slider .swiper-pagination-bullet-active {
+  background: var(--color-brand-primary);
+  border-color: var(--color-brand-primary);
+}
+
+/* --- Page Header --- */
+.page-header {
+  padding: 4rem 0;
+  background-color: var(--color-gray-100);
+}
+
+/* --- About Page --- */
+.about-section img {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Products Page --- */
+.product-grid-card {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.product-grid-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+/* --- Contact Page --- */
+.contact-info-item svg {
+  color: var(--color-brand-primary);
+}

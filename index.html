@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furnish — Home eCommerce Bootstrap HTML Template</title>
+    <meta name="description" content="Furnish — premium furniture eCommerce template. Browse modern chairs, lamps, and home office furniture." />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="visually-hidden-focusable position-absolute top-0 start-0 z-3 p-2 bg-white">Skip to content</a>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4 py-3 navbar-custom" role="navigation" aria-label="Main navigation">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand" href="index.html" aria-label="Furnish Template Home">
+          <span class="d-flex flex-column text-uppercase fw-bold lh-sm">
+            <span class="brand-line1">Furnish</span>
+            <span class="brand-line2">Template</span>
+          </span>
+        </a>
+
+        <div class="mx-auto d-lg-flex d-none">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+          <span class="d-flex align-items-center gap-2 fw-bold">
+            <i class="bi bi-telephone"></i>
+            <span>+901234576</span>
+          </span>
+          <a href="#offcanvasNav" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasNav" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-3"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==================== OFFCANVAS (Mobile Nav) ==================== -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+      <div class="offcanvas-header px-4">
+        <a class="navbar-brand" href="index.html" aria-label="Furnish Template Home">
+          <span class="d-flex flex-column text-uppercase fw-bold lh-sm">
+            <span class="brand-line1">Furnish</span>
+            <span class="brand-line2">Template</span>
+          </span>
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content">
+      <!-- ========== HERO SLIDER ========== -->
+      <div class="py-lg-8 pt-6">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xxl-8 col-12">
+              <div
+                class="swiper hero-slider swiper-pagination-light"
+                id="hero-slider"
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="Featured products carousel"
+              >
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide px-md-8" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                    <div class="position-relative text-center">
+                      <img src="assets/images/slider-img-2.png" alt="" class="img-fluid my-5 my-lg-0" />
+                      <div class="text-center position-absolute top-0 start-0 px-lg-11 w-100">
+                        <h1 class="fs-1 fst-italic hero-badge">20% Sell</h1>
+                        <h2 class="display-4 lh-1 hero-title">Comfy Sofa Home-Office</h2>
+                      </div>
+                      <div class="position-absolute top-md-65 top-75 start-50 translate-middle-x mt-lg-9 w-100">
+                        <p class="d-none d-lg-block text-muted">Comfortable and stylish sofa for your home office.</p>
+                        <div class="fw-bold mb-4 d-none d-lg-block hero-price">$50</div>
+                        <a href="products.html" class="btn btn-primary">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide px-md-8" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                    <div class="position-relative text-center">
+                      <img src="assets/images/slider-img-1.png" alt="" class="img-fluid my-5 my-lg-0" />
+                      <div class="text-center position-absolute top-0 start-0 px-lg-11 w-100">
+                        <h1 class="fs-1 fst-italic hero-badge">10% Sell</h1>
+                        <h2 class="display-4 lh-1 hero-title">Exchange your old furniture</h2>
+                      </div>
+                      <div class="position-absolute top-md-65 top-75 start-50 translate-middle-x mt-lg-9 w-100">
+                        <p class="d-none d-lg-block text-muted">Save up to $50 for your home office.</p>
+                        <div class="fw-bold mb-4 d-none d-lg-block hero-price">$45</div>
+                        <a href="products.html" class="btn btn-primary">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide px-md-8" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                    <div class="position-relative text-center">
+                      <img src="assets/images/slider-img-3.png" alt="" class="img-fluid my-5 my-lg-0" />
+                      <div class="text-center position-absolute top-0 start-0 px-lg-11 w-100">
+                        <h1 class="fs-1 fst-italic hero-badge">25% Sell</h1>
+                        <h2 class="display-4 lh-1 hero-title">Crafted royal comfort sofa</h2>
+                      </div>
+                      <div class="position-absolute top-md-65 top-75 start-50 translate-middle-x mt-lg-9 w-100">
+                        <p class="d-none d-lg-block text-muted">Experience the elegance of timeless craftsmanship.</p>
+                        <div class="fw-bold mb-4 d-none d-lg-block hero-price">$89</div>
+                        <a href="products.html" class="btn btn-primary">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination mb-3"></div>
+                <div class="swiper-navigation mb-4">
+                  <div class="swiper-button-prev" aria-label="Previous slide"></div>
+                  <div class="swiper-button-next" aria-label="Next slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== COLLECTION SECTION ========== -->
+      <section class="section-padding mx-3 mx-lg-0 bg-white" aria-labelledby="collection-heading">
+        <div class="container">
+          <div class="row mb-md-8 mb-4">
+            <div class="col-lg-12 mb-8">
+              <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-md-between gap-4">
+                <div class="col-sm-5">
+                  <h2 id="collection-heading" class="display-4">Our Favourite Collection</h2>
+                  <p class="mb-0 lead text-muted">
+                    We are inspired by the realities of life today, in which traditional divides between personal and professional space are more fluid.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="swiper collection-slider" id="collection-slider" role="region" aria-label="Product collection">
+                <div class="swiper-wrapper pb-10">
+                  <!-- Product 1 -->
+                  <div class="swiper-slide product-card">
+                    <a href="products.html" tabindex="-1" aria-hidden="true">
+                      <img src="assets/images/product-img-1.jpg" alt="Modern Chair" class="img-fluid" />
+                    </a>
+                    <div class="text-center">
+                      <h3 class="product-name h5">
+                        <a href="products.html">Modern Chair</a>
+                      </h3>
+                      <div>
+                        <span class="product-price-original text-muted me-1">$59.00</span>
+                        <span class="product-price-sale">$29.00</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product 2 -->
+                  <div class="swiper-slide product-card">
+                    <a href="products.html" tabindex="-1" aria-hidden="true">
+                      <img src="assets/images/product-img-2.jpg" alt="Floor Lamp" class="img-fluid" />
+                    </a>
+                    <div class="text-center">
+                      <h3 class="product-name h5">
+                        <a href="products.html">Floor Lamp</a>
+                      </h3>
+                      <div>
+                        <span class="product-price-original text-muted me-1">$95.00</span>
+                        <span class="product-price-sale">$89.00</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product 3 -->
+                  <div class="swiper-slide product-card">
+                    <a href="products.html" tabindex="-1" aria-hidden="true">
+                      <img src="assets/images/product-img-5.jpg" alt="High Back Boss Chair" class="img-fluid" />
+                    </a>
+                    <div class="text-center">
+                      <h3 class="product-name h5">
+                        <a href="products.html">High Back Boss Chair</a>
+                      </h3>
+                      <div>
+                        <span class="product-price-original text-muted me-1">$78.00</span>
+                        <span class="product-price-sale">$68.00</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product 4 -->
+                  <div class="swiper-slide product-card">
+                    <a href="products.html" tabindex="-1" aria-hidden="true">
+                      <img src="assets/images/product-img-6.jpg" alt="Fancy Metal Clock" class="img-fluid" />
+                    </a>
+                    <div class="text-center">
+                      <h3 class="product-name h5">
+                        <a href="products.html">Fancy Metal Clock</a>
+                      </h3>
+                      <div>
+                        <span class="product-price-original text-muted me-1">$58.00</span>
+                        <span class="product-price-sale">$38.00</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product 5 -->
+                  <div class="swiper-slide product-card">
+                    <a href="products.html" tabindex="-1" aria-hidden="true">
+                      <img src="assets/images/product-img-3.jpg" alt="Comfort Chair" class="img-fluid" />
+                    </a>
+                    <div class="text-center">
+                      <h3 class="product-name h5">
+                        <a href="products.html">Comfort Chair</a>
+                      </h3>
+                      <div>
+                        <span class="product-price-original text-muted me-1">$38.00</span>
+                        <span class="product-price-sale">$28.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination mb-3"></div>
+                <div class="swiper-navigation d-none d-lg-block text-center mt-3">
+                  <div class="swiper-button-prev" aria-label="Previous products"></div>
+                  <div class="swiper-button-next" aria-label="Next products"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TESTIMONIAL ========== -->
+      <section
+        class="section-padding"
+        style="background: url(assets/images/couch-with-cushions-glass-table.jpg) no-repeat center / cover;"
+        aria-labelledby="testimonial-heading"
+      >
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-8">
+              <div class="card testimonial-card">
+                <div class="card-body p-6">
+                  <div class="text-center">
+                    <h2 id="testimonial-heading" class="visually-hidden">Testimonial</h2>
+                    <p class="testimonial-text fs-5 mb-4">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    </p>
+                    <div class="lh-1">
+                      <h3 class="fs-5 mb-1">John Deo</h3>
+                      <small class="text-sm text-muted">CEO, Company Name</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== NEWSLETTER ========== -->
+      <section class="section-padding" aria-labelledby="newsletter-heading">
+        <div class="container">
+          <div class="row justify-content-center mx-lg-10">
+            <div class="col-lg-8 text-center">
+              <h2 id="newsletter-heading" class="mb-5 display-6">Subscribe to our Newsletter</h2>
+              <form class="d-flex justify-content-center gap-2 flex-column flex-sm-row newsletter-form" id="newsletter-form" novalidate>
+                <label for="newsletter-email" class="visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  class="form-control w-lg-50 w-100"
+                  placeholder="Enter your email"
+                  required
+                  aria-required="true"
+                />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer pt-8" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 mb-4">
+            <a class="navbar-brand text-white" href="index.html" aria-label="Furnish Template Home">
+              <span class="d-flex flex-column text-uppercase fw-bold lh-sm">
+                <span class="brand-line1">Furnish</span>
+                <span class="brand-line2">Template</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-lg-8 col-md-6 mb-4 d-flex justify-content-start justify-content-md-end">
+            <ul class="list-unstyled lh-lg d-flex flex-column flex-md-row gap-4 mb-0">
+              <li><a href="index.html" class="ft-links" aria-current="page">Home</a></li>
+              <li><a href="about.html" class="ft-links">Services</a></li>
+              <li><a href="products.html" class="ft-links">Products</a></li>
+              <li><a href="about.html" class="ft-links">About Us</a></li>
+              <li><a href="contact.html" class="ft-links">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center pt-lg-8 pb-4">
+          <div class="col-lg-6 col-md-6 mb-4">
+            <h2 class="display-3 text-white">We Design all over the world</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex gap-3 justify-content-start justify-content-lg-end">
+              <a href="#" class="btn btn-outline-light btn-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-outline-light btn-icon" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-outline-light btn-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="btn btn-outline-light btn-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center py-lg-8">
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex flex-column">
+              <span class="text-muted">Email Id</span>
+              <span class="h3 fw-light text-white">Info@example.com</span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="d-flex gap-3 justify-content-lg-end">
+              <a href="contact.html" class="btn btn-outline-light">Contact us</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="bg-secondary" />
+
+        <div class="row pb-3">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 small">
+              &copy; <span id="copyright-year">2025</span> Furnish. Developed by
+              <a href="https://codescandy.com" class="text-white" target="_blank" rel="noopener">CodesCandy</a> &middot;
+              Distributed by <a href="https://themewagon.com" class="text-white" target="_blank" rel="noopener">ThemeWagon</a>.
+              All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="ft-links me-3">Privacy Policy</a>
+            <a href="#" class="ft-links">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Download Button -->
+    <div class="floating-download">
+      <a href="https://themewagon.com/themes/furnish/" class="btn btn-primary" target="_blank" rel="noopener">Download Now</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
