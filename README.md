@@ -248,3 +248,7 @@ Originally distributed by [ThemeWagon](https://themewagon.com/) and developed by
   <br/>
   <sub>Next.js version powered by Next.js 15 + TypeScript.</sub>
 </p>
+
+---
+
+*Built by Girish Lade — https://ladestack.in*
